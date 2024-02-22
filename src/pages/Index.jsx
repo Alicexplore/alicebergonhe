@@ -39,7 +39,7 @@ export default function EnterCode() {
         </div>
         <button className="mt-4 px-4 py-2 text-white tracking-wide font-apercu font-thin text-sm" onClick={checkCombination}>
           {codeCracked ? 'Code cracked!' : 'Crack the code.'}
-          <br /><span className="px-4 py-2 text-[#222] tracking-wide font-apercu font-thin text-sm transition duration-700 ease-in-out hover:text-white">{codeCracked ? 'Enter here' : 'Your mouse/cursor could help.'}</span></button>
+          <br /><span className="px-4 py-2 text-[#222] tracking-wide font-apercu font-thin text-sm transition duration-700 ease-in-out hover:text-white">{codeCracked ? 'Portfolio is coming soon' : 'Your mouse/cursor could help.'}</span></button>
       </div>
     </div>
   );
