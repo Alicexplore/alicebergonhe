@@ -4,13 +4,11 @@ export default function EnterCode() {
   const [combination, setCombination] = useState(['2', '3', '8', '4', '9']);
   const correctCombination = ['1', '7', '3', '9', '5'];
   const [codeCracked, setCodeCracked] = useState(false);
-  const [showEnterHere, setShowEnterHere] = useState(true);
 
   const handleClick = (index) => {
     const newCombination = [...combination];
     newCombination[index] = parseInt(newCombination[index]) === 9 ? '0' : (parseInt(newCombination[index]) + 1).toString();
     setCombination(newCombination);
-    setShowEnterHere(false);
 
     if (JSON.stringify(newCombination) === JSON.stringify(correctCombination)) {
       setCodeCracked(true); 
@@ -20,9 +18,7 @@ export default function EnterCode() {
   const checkCombination = () => {
     if (JSON.stringify(combination) === JSON.stringify(correctCombination)) {
       setCodeCracked(true);
-    } else {
-      console.log('Combinaison incorrecte! Veuillez réessayer.');
-    }
+    } 
   };
 
   return (
