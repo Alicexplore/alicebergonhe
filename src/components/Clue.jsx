@@ -30,7 +30,8 @@ export default function Clue() {
         whileInView={'show'}
         viewport={{ once: true, amount: 0}}>
         <div
-            className={`w-8 h-8 rounded-full bg-[#222] text-[#e9e9e9] font-thin font-apercu text-sm flex items-center justify-center border border-[#e9e9e9] cursor-pointer ${number === 0 && 'pointer-events-none'}`}
+            className={`w-8 h-8 rounded-full bg-[#464646] text-[#d5d5d5] font-normal font-apercu text-xs 
+            flex items-center justify-center cursor-pointer ${number === 0 && 'pointer-events-none'}`}
             onClick={handleClick}
       >
         {number}

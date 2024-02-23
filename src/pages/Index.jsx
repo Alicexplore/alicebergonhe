@@ -32,7 +32,7 @@ export default function EnterCode() {
         </div>
         <h1 className="fixed top-40 left-200 tracking-wide font-apercu text-[#222]">Enter with {correctCombination.join('')}</h1>
         <button className="fixed mt-4 px-4 py-2 top-10 right-2O tracking-wide font-thin font-apercu text-[#222] text-sm transition duration-700 ease-in-out hover:text-white">Not here.</button>
-        <button className="fixed px-4 py-2 bottom-10 left-20 tracking-wide font-thin font-apercu text-[#222] text-sm transition duration-700 ease-in-out hover:text-white">Not here, not that simple.</button>
+        <button className="fixed px-4 py-2 bottom-40 left-28 tracking-wide font-thin font-apercu text-[#222] text-sm transition duration-700 ease-in-out hover:text-white">Not here, not that simple.</button>
         <motion.div
                 variants={fadeIn('down', 1)}
                 initial='hidden'
@@ -54,6 +54,10 @@ export default function EnterCode() {
         <button className="mt-4 px-4 py-2 text-white tracking-wide font-apercu font-thin text-sm" onClick={checkCombination}>
           {codeCracked ? 'Code cracked!' : 'Crack the code.'}
           <br /><span className="px-4 py-2 text-[#222] tracking-wide font-apercu font-thin text-sm transition duration-700 ease-in-out hover:text-white">{codeCracked ? 'Portfolio is coming soon' : 'Your mouse/cursor could help.'}</span></button>
+          <button class="btn-class-name">
+  <span class="back"></span>
+  <span class="front"></span>
+</button>
           </motion.div>
       </div>
     </div>
