@@ -31,14 +31,14 @@ export default function EnterCode() {
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: true, amount: 0}}
-                className='fixed top-10 left-10 grid grid-cols-1 text-left gap-y-2'>
-                    <img src="/logo/logo-portfolio.svg" alt="" width={123}/>
+                className='fixed top-10 left-10 grid grid-cols-1 text-left leading-tight'>
+                    <h1 className="text-[#e9e9e9] font-apercu text-5xl font-normal tracking-wide">alice.</h1>
                     <motion.div
                         variants={fadeIn('up', 2)}
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{ once: true, amount: 0}}>
-                        <h3 className="text-[#e9e9e9] tracking-wide font-apercu font-thin text-xs">Portfolio coming soon</h3>
+                        <h3 className="text-[#e9e9e9] tracking-wide font-apercu text-xs font-extralight">Portfolio coming soon</h3>
                     </motion.div>
             </motion.div>
         <h1 className="fixed top-40 left-200 tracking-wide font-apercu text-[#222]">Enter with {correctCombination.join('')}</h1>
