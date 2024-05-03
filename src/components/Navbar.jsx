@@ -1,7 +1,7 @@
 function Navbar() {
     return (
-      <div className="h-[80px] w-full fixed">
-        <section className="flex justify-between p-10 mix-blend-exclusion text-[#222]">
+      <div className="h-[80px] w-full fixed mix-blend-exclusion">
+        <section className="flex justify-between p-10 text-white">
             <div className="flex-row text-2xl">
                 <h1>Alice Bergonhe</h1>
                 <a className="flex items-center" href="https://www.linkedin.com/in/alicebergonhe/" 
