@@ -40,7 +40,7 @@ function Navbar() {
                 </motion.div>
                 </div>
                 <motion.div
-                variants={fadeIn('down', 2.5)}
+                variants={fadeIn('down', 1)}
                 initial='hidden'
                 whileInView={'show'}
                 viewport={{ once: true, amount: 0}}>
