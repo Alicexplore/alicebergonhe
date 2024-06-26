@@ -34,26 +34,14 @@ const Preloader = () => {
             <motion.div
               initial={{ y: 0 }}
               animate={{ y: 1000 }}
-              transition={{ duration: 0.8 }}
-              className='w-1/4 h-full bg-white'
+              transition={{ duration: 1.2 }}
+              className='w-1/2 h-full bg-white'
             />
             <motion.div
               initial={{ y: 0 }}
               animate={{ y: 1000 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              className='w-1/4 h-full bg-white'
-            />
-            <motion.div
-              initial={{ y: 0 }}
-              animate={{ y: 1000 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className='w-1/4 h-full bg-white'
-            />
-            <motion.div
-              initial={{ y: 0 }}
-              animate={{ y: 1000 }}
-              transition={{ duration: 0.8, delay: 1.5 }}
-              className='w-1/4 h-full bg-white'
+              transition={{ duration: 1, delay: 0.3 }}
+              className='w-1/2 h-full bg-white'
             />
           </div>
         </>
