@@ -33,7 +33,7 @@ const Menu = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: true, amount: 0}}
-          className="p-8 focus:outline-none z-50 fixed right-0 mix-blend-exclusion"
+          className="p-8 focus:outline-none z-50 fixed right-0 mix-blend-exclusion mt-2"
           >              
       <button
         onClick={toggleMenu}
