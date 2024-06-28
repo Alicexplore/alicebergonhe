@@ -2,7 +2,7 @@ import AnimatedCursor from "react-animated-cursor"
 
 const CustomCursor = () => {
   return (
-    <div>
+    <div className="hidden lg:block">
       <AnimatedCursor
         innerSize={8}
         outerSize={40}
