@@ -9,35 +9,29 @@ import LeftNavbar from './components/LeftNavbar';
 import Menu from './components/Menu';
 import CustomCursor from './components/CustomCursor';
 
-
 export default function App() {
   return (
-    <div>
-      <div className="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0">
-          <CustomCursor />
-          <LeftNavbar />
-          <Menu />
-          <div className="snap-always snap-start">
-              <Home />
-          </div>
-          <div className="snap-always snap-start">
-              <About />
-          </div>
-          <div className="snap-always snap-start">
-              <White />
-          </div>
-          <div className="snap-always snap-start">
-              <Sneakers />
-          </div>
-          <div className="snap-always snap-start">
-              <Sneakers />
-          </div>
-          <div className="snap-always snap-start">
-              <Sneakers />
-          </div>
-          <div className="snap-always snap-start"> 
-              <Contact />
-          </div>
+    <div className="container h-screen flex-grow z-0">
+        <div className="snap-y snap-mandatory overflow-y-scroll h-full flex-grow z-0">
+      <CustomCursor />
+      <LeftNavbar />
+      <Menu />
+      
+        <div className="snap-always snap-start">
+          <Home />
+        </div>
+        <div className="snap-always snap-start">
+          <About />
+        </div>
+        <div className="snap-always snap-start">
+          <White />
+        </div>
+        <div className="snap-always snap-start">
+          <Sneakers />
+        </div>
+        <div className="snap-always snap-start">
+          <Contact />
+        </div>
       </div>
     </div>
   );
