@@ -13,7 +13,7 @@ const LeftNavbar = () => {
                         whileInView='show'
                         viewport={{ once: true, amount: 0 }}
                         style={{ fill: '#222222', stroke: '#f2f2f2', strokeWidth: '6'}}>
-                        <img className="w-[20%] sm:w-[25%]" src="./images/initsvg.svg" alt=""  />
+                        <img className="w-[2%] sm:w-[25%]" src="./images/initsvg.svg" alt=""  />
                     </motion.div>
                     <div className="mix-blend-exclusion text-[#F3F0DD]">
                     <motion.div
