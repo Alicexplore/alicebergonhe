@@ -6,7 +6,7 @@ const LeftNavbar = () => {
     return (
         <div className="h-[80px] w-full fixed z-40 mix-blend-exclusion">
             <div className="flex justify-between p-8">
-                <div className="flex-row text-xl sm:text-2xl">
+                <div className="flex-row text-2git commit -m 'update font size for Navbar mobile version' xl sm:text-2xl">
                     <motion.div
                         variants={fadeIn('down', 1)}
                         initial='hidden'
