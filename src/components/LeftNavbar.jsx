@@ -6,7 +6,7 @@ const LeftNavbar = () => {
     return (
         <div className="h-[80px] w-full fixed z-40 mix-blend-exclusion">
             <div className="flex justify-between p-8">
-                <div className="flex-row text-2git commit -m 'update font size for Navbar mobile version' xl sm:text-2xl">
+                <div className="flex-row text-2xl commit -m 'update font size for Navbar mobile version' xl sm:text-2xl">
                     <motion.div
                         variants={fadeIn('down', 1)}
                         initial='hidden'
@@ -62,7 +62,7 @@ const LeftNavbar = () => {
                         initial='hidden'
                         whileInView='show'
                         viewport={{ once: true, amount: 0 }}
-                        className="hidden sm:block mt-1 cursor-pointer w-[230px] -[42px] ">
+                        className="absolute w-[100px] sm:w-[230px] mt-2 cursor-pointer">
                         <iframe
                         style={{ border: '0', width: '230px', height: '42px' }}
                         src="https://bandcamp.com/EmbeddedPlayer/album=2081062495/size=small/bgcol=222222/linkcol=ffffff/artwork=none/track=3626635635/"
