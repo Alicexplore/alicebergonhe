@@ -6,14 +6,14 @@ const LeftNavbar = () => {
     return (
         <div className="h-[80px] w-full fixed z-40 mix-blend-exclusion">
             <div className="flex justify-between p-8">
-                <div className="flex-row text-md sm:text-2xl">
+                <div className="flex-row text-xl sm:text-2xl">
                     <motion.div
                         variants={fadeIn('down', 1)}
                         initial='hidden'
                         whileInView='show'
                         viewport={{ once: true, amount: 0 }}
                         style={{ fill: '#222222', stroke: '#f2f2f2', strokeWidth: '6'}}>
-                        <img className="w-[15%] sm:w-[25%]" src="./images/initsvg.svg" alt=""  />
+                        <img className="w-[20%] sm:w-[25%]" src="./images/initsvg.svg" alt=""  />
                     </motion.div>
                     <div className="mix-blend-exclusion text-[#F3F0DD]">
                     <motion.div
