@@ -11,7 +11,7 @@ const Home = () => {
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 4, delay: 0 }}
       viewport={{ once: false }}
-      className="absolute w-[300%] left-[-500px] bottom-[-210px] sm:left-[-360px] sm:bottom-[-300px] sm:w-[110%] h-auto z-0 max-w-none"
+      className="absolute hidden sm:block sm:left-[-360px] sm:bottom-[-300px] sm:w-[110%] h-auto z-0 max-w-none"
     />
     <motion.img
       src="./images/bird.png"
@@ -21,8 +21,13 @@ const Home = () => {
       viewport={{ once: false }}
       className="absolute hidden sm:block sm:left-[-290px] sm:bottom-[-30px] sm:w-[110%] h-auto z-20 max-w-none"
     />
+    
+    <div className="absolute block left-[-700px] bottom-0 w-[410%] sm:hidden">
+        <img src="./images/bird.png" alt="Bird" />
+    </div>
+    
      <motion.img
-        src="./images/lightning-A.svg"
+        src="./images/lightningA5.svg"
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 0] }}
         transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1, delay: 5, repeat: Infinity, repeatDelay: 13 }}
@@ -40,7 +45,7 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 0] }}
         transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1, delay: 9, repeat: Infinity, repeatDelay: 15 }}
-        className="absolute left-10 top-[-800px] w-[850px] h-auto z-10 max-w-none"
+        className="absolute hidden sm:block left-10 top-[-800px] w-[850px] h-auto z-10 max-w-none"
       />
       <section className="z-20 flex flex-col items-center justify-center mix-blend-exclusion">
         <ScrollDown />
