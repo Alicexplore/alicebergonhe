@@ -3,7 +3,7 @@ import { fadeIn } from '../fadeIn';
 
 const About = () => {
   return (
-    <div id="About" className="relative w-full grid grid-cols-1 md:grid-cols-2 h-screen text-[#f2f2f2] bg-[#222] overflow-hidden">
+    <div id="About" className="relative w-full grid grid-cols-1 md:grid-cols-2 h-svh text-[#f2f2f2] bg-[#222] overflow-hidden">
       <motion.img
         src="./images/clouds1.png"
         initial={{ y: "50%", opacity: 0 }}

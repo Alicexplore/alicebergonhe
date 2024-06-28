@@ -4,7 +4,7 @@ import { fadeIn } from "../fadeIn";
 const LeftNavbar = () => {
    
     return (
-        <div className="h-[80px] w-full fixed z-40 mix-blend-exclusion">
+        <div className="fixed z-40 mix-blend-exclusion">
             <div className="flex justify-between p-8">
                 <div className="flex-row text-2xl commit -m 'update font size for Navbar mobile version' xl sm:text-2xl">
                     <motion.div

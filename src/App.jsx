@@ -12,8 +12,8 @@ import CustomCursor from './components/CustomCursor';
 
 export default function App() {
   return (
-    <div className='h-screen w-full'>
-      <div className="snap-y snap-mandatory overflow-y-scroll h-screen flex-grow z-0">
+    <div className='h-svh w-full'>
+      <div className="snap-y snap-mandatory overflow-y-scroll h-svh flex-grow z-0">
           <CustomCursor />
           <LeftNavbar />
           <Menu />
