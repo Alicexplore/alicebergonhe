@@ -72,20 +72,6 @@ const Menu = () => {
         )}
       </button>
       </motion.div> 
-      <motion.div
-        variants={fadeIn('down', 1.5)}
-        initial='hidden'
-        whileInView={'show'}
-        viewport={{ once: true, amount: 0}}
-        >
-        <div className='flex fixed right-0 top-0 z-50 p-10 gap-2 mt-4'>
-          <a href="#About" className="w-4 h-4 bg-[#F3F0DD] hover:opacity-40 transition-opacity ease-in-out duration-700"></a>
-          <a href="#About" className="w-4 h-4 bg-[#F3F0DD] hover:opacity-40 transition-opacity ease-in-out duration-700"></a>
-          <a href="#About" className="w-4 h-4 bg-[#F3F0DD] hover:opacity-40 transition-opacity ease-in-out duration-700"></a>
-          <a href="#About" className="w-4 h-4 bg-[#F3F0DD] hover:opacity-40 transition-opacity ease-in-out duration-700"></a>
-          <a href="#About" className="w-4 h-4 bg-[#F3F0DD] hover:opacity-40 transition-opacity ease-in-out duration-700"></a>
-         </div>    
-      </motion.div>
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -95,39 +81,63 @@ const Menu = () => {
             variants={menuVariants}
             className="fixed inset-0 bg-[#222] flex items-center justify-center z-40"
           >
-            <motion.ul className="text-center text-[#f2f2f2] space-y-6 text-4xl font-extralight">
-              <motion.li
-                variants={fadeIn('up', 0.2)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
-              >
-                Home
-              </motion.li>
-              <motion.li
-                variants={fadeIn('up', 0.4)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
-              >
-                About
-              </motion.li>
-              <motion.li
-                variants={fadeIn('up', 0.6)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
-              >
-                Projects
-              </motion.li>
-              <motion.li
-                variants={fadeIn('up', 0.8)}
-                initial="hidden"
-                animate="show"
-                exit="hidden"
-              >
-                Contact
-              </motion.li>
+            <motion.ul className="text-center text-[#f2f2f2] space-y-4 text-3xl font-extralight items-center justify-center">
+            <div className="flex flex-col items-center justify-center h-screen">
+            <ul className="flex flex-col text-center justify-center">
+                <motion.li
+                    variants={fadeIn('up', 0.2)}
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
+                    className="mb-4"
+                >
+                    <h1 className='flex justify-center items-center gap-2'>Home
+                        <span className="-mb-3 -rotate-45">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                    </h1>           
+                </motion.li>
+                <motion.li
+                    variants={fadeIn('up', 0.4)}
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
+                    className="mb-4"
+                >
+                    <h1 className='flex justify-center items-center gap-2'>About
+                        <span className="-mb-3 -rotate-45">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                    </h1>
+                </motion.li>
+                <motion.li
+                    variants={fadeIn('up', 0.6)}
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
+                    className="mb-4"
+                >
+                    <h1 className='flex justify-center items-center gap-2'>Projects
+                        <span className="-mb-3 -rotate-45">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                    </h1>           
+                </motion.li>
+                <motion.li
+                    variants={fadeIn('up', 0.8)}
+                    initial="hidden"
+                    animate="show"
+                    exit="hidden"
+                    className="mb-4"
+                >
+                    <h1 className='flex justify-center items-center gap-2'>Contact
+                        <span className="-mb-3 -rotate-45">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </span>
+                    </h1>           
+                </motion.li>
+            </ul>
+        </div>
             </motion.ul>
           </motion.div>
         )}
