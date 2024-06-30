@@ -20,16 +20,31 @@ const ComingSoon = () => {
         </div>
         
         <div>
-            <img className="absolute hidden md:block md:bottom-[-400px] md:left-[-200px] sm:w-full z-10 " src="./images/clouds1.png" alt="clouds" />
-            <img className="absolute hidden md:block md:bottom-0 md:left-[-500px] md:z-20 md:w-[100%] md:max-w-none " src="./images/bird.png" alt="bird" />
+            <img className="absolute hidden md:block md:bottom-[-400px] md:left-[-200px] md:w-[120%] md:z-10 md:max-w-none" src="./images/clouds1.png" alt="clouds" />
+            <img className="absolute hidden md:block md:bottom-0 md:left-[-500px] md:z-20 md:w-[120%] md:max-w-none " src="./images/bird.png" alt="bird" />
         </div>
+        <motion.img
+        src="./images/lightning-A.png"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 1, 0] }}
+        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1.5, delay: 3, repeat: Infinity, repeatDelay: 3 }}
+        className="absolute hidden sm:block left-10 top-[-800px] w-[850px] h-auto z-10 max-w-none"
+      />
         <motion.img
             src="./images/lightning-D.png"
             initial={{ opacity: 0 }}
             animate={{ opacity: [0, 1, 0] }}
-            transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1.5, delay: 8, repeat: Infinity, repeatDelay: 4 }}
+            transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1.5, delay: 5, repeat: Infinity, repeatDelay: 4 }}
             className="absolute left-10 top-[-800px] w-[850px] h-auto z-10 max-w-none"
         />
+        <motion.img
+        src="./images/lightning-C.png"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 1, 0] }}
+        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1.5, delay: 7, repeat: Infinity, repeatDelay: 6 }}
+        className="absolute hidden sm:block right-[-120px] top-[-950px] w-[850px] h-auto z-10 max-w-none"
+      />
+      
     </div>
   );
 };
