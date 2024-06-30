@@ -27,24 +27,24 @@ const Home = () => {
     </div>
     
      <motion.img
-        src="./images/lightningA5.svg"
+        src="./images/lightning-A.png"
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 0] }}
-        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1, delay: 5, repeat: Infinity, repeatDelay: 13 }}
+        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1.5, delay: 5, repeat: Infinity, repeatDelay: 3 }}
         className="absolute hidden sm:block left-10 top-[-800px] w-[850px] h-auto z-10 max-w-none"
       />
       <motion.img
-        src="./images/lightning-C.svg"
+        src="./images/lightning-C.png"
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 0] }}
-        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1, delay: 8.5, repeat: Infinity, repeatDelay: 13 }}
+        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1.5, delay: 8.5, repeat: Infinity, repeatDelay: 6 }}
         className="absolute hidden sm:block right-[-120px] top-[-950px] w-[850px] h-auto z-10 max-w-none"
       />
       <motion.img
-        src="./images/lightning-D.svg"
+        src="./images/lightning-D.png"
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 0] }}
-        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1, delay: 9, repeat: Infinity, repeatDelay: 15 }}
+        transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1.5, delay: 9, repeat: Infinity, repeatDelay: 4 }}
         className="absolute hidden sm:block left-10 top-[-800px] w-[850px] h-auto z-10 max-w-none"
       />
       <section className="z-20 flex flex-col items-center justify-center mix-blend-exclusion">
