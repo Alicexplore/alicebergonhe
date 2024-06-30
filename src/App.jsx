@@ -14,7 +14,7 @@ import ComingSoon from './pages/ComingSoon';
 export default function App() {
   return (
     // <div className='h-svh w-full'>
-        <div>
+        <div className='h-svh w-full'>
             <CustomCursor />
             <ComingSoon />
         </div>
