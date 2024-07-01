@@ -3,7 +3,7 @@ import { fadeIn } from '../fadeIn';
 
 const About = () => {
   return (
-    <div id="About" className="relative w-full grid grid-cols-1 md:grid-cols-2 h-svh text-[#f2f2f2] bg-[#222] overflow-hidden">
+    <div id="About" className="relative h-svh w-full grid grid-cols-1 md:grid-cols-2 h-svh text-[#f2f2f2] bg-[#222] overflow-hidden">
       <motion.img
         src="./images/clouds1.png"
         initial={{ y: "50%", opacity: 0 }}
@@ -20,7 +20,6 @@ const About = () => {
         className="absolute left-[-120px] top-[-950px] w-[850px] h-auto z-10 max-w-none"
       />
       <div className="col-span-1 relative z-10">
-        {/* Contenu optionnel pour la première colonne */}
       </div>
       <div className="p-8 sm:mt-[100px] space-y-24 col-span-1 relative z-10">
         <motion.div
@@ -29,7 +28,7 @@ const About = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0}}
           className="text-2xl">
-            <h1>About</h1>
+            <h1>01 About</h1>
         </motion.div>
         <motion.div
           variants={fadeIn('down', 1.5)}

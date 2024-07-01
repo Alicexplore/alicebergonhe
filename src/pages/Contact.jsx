@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative w-full h-svh flex flex-col items-center justify-center overflow-hidden">
     <div className="absolute inset-0 bg-[#222] z-0"></div>
     <div className="opacity-80">
     <motion.img
@@ -58,7 +58,7 @@ const Contact = () => {
         transition={{ times: [0, 0.1, 0.3, 0.4, 0.6], duration: 1, delay: 9, repeat: Infinity, repeatDelay: 15 }}
         className="absolute left-10 top-[-800px] w-[850px] h-auto z-10 max-w-none"
       />
-    <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-full z-30">
+    <div className="grid grid-cols-1 sm:grid-cols-2 w-full h-svh z-30">
         <div className="grid grid-cols-1"></div>
         <div className="grid grid-cols-1">
         <div className='flex flex-col gap-2 justify-center items-center z-30 '>

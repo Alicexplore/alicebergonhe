@@ -3,7 +3,7 @@ import { fadeIn } from '../fadeIn';
 
 const White = () => {
   return (
-    <div className="relative w-full grid grid-cols-1 md:grid-cols-2 h-screen text-[#f2f2f2] bg-[#222] overflow-hidden">
+    <div className="relative w-full grid grid-cols-1 md:grid-cols-2 h-svh text-[#f2f2f2] bg-[#222] overflow-hidden">
       <div className="p-8 sm:mt-[100px] space-y-24 col-span-1 relative z-10 text-right">
         <motion.div
           variants={fadeIn('down', 1)}
@@ -11,7 +11,7 @@ const White = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0}}
           className="text-2xl">
-            <h1>Projects</h1>
+            <h1>02 Projects</h1>
         </motion.div>
         <motion.div
           variants={fadeIn('down', 1.5)}

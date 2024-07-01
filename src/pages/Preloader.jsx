@@ -15,9 +15,9 @@ const Preloader = () => {
   }, []);
 
   return (
-    <div className='fixed w-full h-full z-50'>
+    <div className='fixed w-full h-svh z-50'>
       {!animationComplete && (
-        <div className='w-full h-full bg-[#f2f2f2] flex items-center justify-center text-[#222]'>
+        <div className='w-full first-letter:h-svh bg-[#f2f2f2] flex items-center justify-center text-[#222]'>
           <div className='bg-[#222] h-2 w-full max-w-md rotate-180'>
             <motion.div
               className='h-2 bg-[#f2f2f2]'

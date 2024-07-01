@@ -1,6 +1,6 @@
 const Sneakers = () => {
     return (
-      <div className="w-full h-screen grid grid-cols-1 md:grid-cols-2 bg-[#222] text-[#f2f2f2]">
+      <div className="w-full h-svh grid grid-cols-1 md:grid-cols-2 bg-[#222] text-[#f2f2f2]">
         <div className="grid-cols-1 p-10">
           <h1 className="text-[4rem] font-medium mb-4 tracking-wide">sneakers</h1>
           <p className="text-justify mb-4">
@@ -24,7 +24,7 @@ const Sneakers = () => {
           <img
             src="./works/diana-light-u_jt9A7FADk-unsplash.jpg"
             alt="sneakers"
-            className="w-full h-full"
+            className="w-full h-svh"
           /> 
         </div>
       </div>

@@ -3,7 +3,7 @@ import ScrollDown from '../components/ScrollDown';
 
 const Home = () => {
   return (
-  <div className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+  <div className="relative w-full h-svh flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-[#222] z-0"></div>
     <motion.img
       src="./images/clouds1.png"
