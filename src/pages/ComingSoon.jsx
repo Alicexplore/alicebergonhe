@@ -71,7 +71,7 @@ const ComingSoon = () => {
                     <div>
                     </div>  */}
                 {/* </div> */}
-                <div className="flex flex-col gap-4 z-50 top-0 left-0 p-4 md:p-8 absolute">
+                <div className="flex flex-col gap-4 z-50 top-0 left-0 p-6 md:p-8 absolute">
                     {/* <motion.div
                         variants={fadeIn('down', 1)}
                         initial='hidden'
