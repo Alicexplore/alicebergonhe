@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "selector",
   theme: {
     extend: {
       fontFamily: {
@@ -18,6 +19,9 @@ export default {
         '14xl': '17rem',
         '15xl': '20rem',
         '16xl': '40rem',
+      },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
       },
     },
   },
