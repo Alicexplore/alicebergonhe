@@ -6,7 +6,7 @@ import Home from './pages/Home';
 // import White from './pages/White';
 // import Contact from './pages/Contact';
 // import Sneakers from './pages/Sneakers';
-import LeftNavbar from './components/LeftNavbar';
+// import LeftNavbar from './components/LeftNavbar';
 import CustomCursor from './components/CustomCursor';
 // import Spinner from './components/Spinner';
 // import Preloadere from './components/Preloadere';
@@ -25,7 +25,7 @@ export default function App() {
         <div className='h-svh w-full'>
           {/* <div className="snap-y snap-mandatory overflow-y-scroll h-svh flex-grow z-0"> */}
             <CustomCursor />
-            <LeftNavbar />
+            {/* <LeftNavbar /> */}
             {/* <div className="snap-always snap-start"> */}
                 <Home />
             {/* </div> */}

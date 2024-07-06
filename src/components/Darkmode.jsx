@@ -40,7 +40,7 @@ export default function Header() {
           />
           <div className="block relative bg-white w-16 h-2 rounded-full before:absolute
            before:bg-white before:w-6 before:h-6 before:-mt-[9px] before:rounded-full before:transition-all 
-           before:duration-1000 before:left-[-3px] peer-checked:before:left-[40px] peer-checked:before:bg-white">
+           before:duration-500 before:left-[-3px] peer-checked:before:left-[40px] peer-checked:before:bg-white">
            </div>
         </label>
       </div>
