@@ -33,11 +33,11 @@ const Menu = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: true, amount: 0}}
-          className="p-8 focus:outline-none z-50 fixed right-0 mix-blend-exclusion mt-2"
+          className="p-8 focus:outline-none z-50 fixed right-0 mix-blend-exclusion mt-2 "
           >              
       <button
         onClick={toggleMenu}
-        className=""
+        className="hover:-rotate-45 transition duration-700"
       >
         {isOpen ? (
           <svg
@@ -56,7 +56,7 @@ const Menu = () => {
           </svg>
         ) : (
           <svg
-            className="w-9 h-9 text-white hover:opacity-70"
+            className="w-9 h-9 text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

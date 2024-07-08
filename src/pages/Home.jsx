@@ -2,40 +2,54 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const themes = [
+    {
+        bg: 'bg-[#5E7300]',
+        text: 'text-[#F4C500]',
+        border: 'border-[#F4C500]',
+        hoverBg: 'hover:bg-[#F4C500]',
+        hoverText: 'hover:text-[#5E7300]',
+      },
+      {
+        bg: 'bg-[#C98613]',
+        text: 'text-[#B73204]',
+        border: 'border-[#B73204]',
+        hoverBg: 'hover:bg-[#B73204]',
+        hoverText: 'hover:text-[#C98613]',
+      },
+      {
+        bg: 'bg-[#7A0545]',
+        text: 'text-[#D30000]',
+        border: 'border-[#D30000]',
+        hoverBg: 'hover:bg-[#D30000]',
+        hoverText: 'hover:text-[#7A0545]',
+      },
+      {
+        bg: 'bg-[#162A72]',
+        text: 'text-[#1538e5]',
+        border: 'border-[#1538e5]',
+        hoverBg: 'hover:bg-[#1538e5]',
+        hoverText: 'hover:text-[#162A72]',
+      },
+      {
+        bg: 'bg-[#EB4818]',
+        text: 'text-[#DFBD9A]',
+        border: 'border-[#DFBD9A]',
+        hoverBg: 'hover:bg-[#DFBD9A]',
+        hoverText: 'hover:text-[#EB4818]',
+      },
+      {
+        bg: 'bg-[#E6A0C3]',
+        text: 'text-[#EA000C]',
+        border: 'border-[#EA000C]',
+        hoverBg: 'hover:bg-[#EA000C]',
+        hoverText: 'hover:text-[#E6A0C3]',
+      },
   {
-    bg: 'bg-[#e2deda]',
-    text: 'text-[#222]',
-    border: 'border-[#222]',
-    hoverBg: 'hover:bg-[#222]',
-    hoverText: 'hover:text-[#e2deda]',
-  },
-  {
-    bg: 'bg-[#0e1950]',
-    text: 'text-[#1538e5]',
-    border: 'border-[#1538e5]',
-    hoverBg: 'hover:bg-[#1538e5]',
-    hoverText: 'hover:text-[#0e1950]',
-  },
-  {
-    bg: 'bg-[#5E7300]',
-    text: 'text-[#FF7FCD]',
-    border: 'border-[#FF7FCD]',
-    hoverBg: 'hover:bg-[#FF7FCD]',
-    hoverText: 'hover:text-[#5E7300]',
-  },
-  {
-    bg: 'bg-[#222]',
-    text: 'text-[#e2deda]',
-    border: 'border-[#e2deda]',
-    hoverBg: 'hover:bg-[#e2deda]',
-    hoverText: 'hover:text-[#222]',
-  },
-  {
-    bg: 'bg-[#C60084]',
-    text: 'text-[#EA6A00]',
-    border: 'border-[#EA6A00]',
-    hoverBg: 'hover:bg-[#EA6A00]',
-    hoverText: 'hover:text-[#C60084]',
+    bg: 'bg-[#97CABD]',
+    text: 'text-[#FEEAC8]',
+    border: 'border-[#FEEAC8]',
+    hoverBg: 'hover:bg-[#FEEAC8]',
+    hoverText: 'hover:text-[#97CABD]',
   },
 ];
 
@@ -95,7 +109,7 @@ const Home = () => {
               </span>
             </a>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <button
               className={`transition-colors duration-1000 flex text-xs border-[1px] p-2 ${bg} ${text} ${border} md:${hoverBg} md:${hoverText}`} 
               onClick={handleThemeSwitch}
@@ -123,11 +137,11 @@ const Home = () => {
             />
           </svg>
         </div>
-        <div className="col-span-10 md:col-span-6 text-center items-center justify-center text-[3.8rem] md:text-9xl font-bold z-10 leading-[55px] md:leading-[110px]">
-          <h2 className="text-sm font-normal leading-10">(HI MY NAME IS ALICE)</h2>
-          <h1>CREATIVE</h1>
+        <div className="col-span-10 md:col-span-6 text-center items-center justify-center text-[3.8rem] md:text-[5.5rem]  lg:text-9xl font-bold z-10 leading-[55px] md:leading-[90px]">
+          <h2 className="text-sm font-normal leading-10">(HI MY NAME IS ALICE BERGONHE)</h2>
           <h1>FRONTEND</h1>
-          <h2 className="text-sm font-normal leading-10">(DEVELOPER)</h2>
+          <h1>DEVELOPER</h1>
+          <h2 className="text-sm font-normal leading-10">(SUPER CREATIVE +++)</h2>
 
           <div className="flex flex-col items-center justify-center text-center md:hidden text-xs font-normal">
             <h1 className="">
@@ -160,7 +174,7 @@ const Home = () => {
           </svg>
         </div>
         <div className="col-span-1 text-center">
-          <h1 className="hidden md:block text-xs font-normal">CODE PASSIONATE &<br />DESIGN ENTHUSIAST</h1>
+          <h1 className="hidden md:block text-xs font-normal mr-4">CODE PASSIONATE &<br />DESIGN ENTHUSIAST</h1>
         </div>
         <div className="absolute w-full flex bottom-[40px] justify-center text-center items-center">
           <h1
