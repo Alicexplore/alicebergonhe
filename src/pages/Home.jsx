@@ -3,6 +3,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const themes = [
     {
+        bg: 'bg-[#E1DED9]',
+        text: 'text-[#222]',
+        border: 'border-[#222]',
+        hoverBg: 'hover:bg-[#222]',
+        hoverText: 'hover:text-[#E1DED9]',
+      },
+    {
         bg: 'bg-[#5E7300]',
         text: 'text-[#F4C500]',
         border: 'border-[#F4C500]',
@@ -111,7 +118,7 @@ const Home = () => {
           </div>
           <div className="flex items-center justify-center">
             <button
-              className={`transition-colors duration-1000 flex text-xs border-[1px] p-2 ${bg} ${text} ${border} md:${hoverBg} md:${hoverText}`} 
+              className={`transition-colors duration-1000 flex text-xs border-[1px] p-2 ${bg} ${text} ${border} ${hoverBg} ${hoverText}`} 
               onClick={handleThemeSwitch}
             >
               ATMOSPHERES
@@ -179,7 +186,7 @@ const Home = () => {
         <div className="absolute w-full flex bottom-[40px] justify-center text-center items-center">
           <h1
             className={`transition-colors duration-1000 flex text-xs border-[1px] p-2 ${text} ${border}`}>
-            NEW PORTFOLIO COMING VERY SOON
+            NEW PORTFOLIO IS COMING VERY SOON
           </h1>
         </div>
       </div>
