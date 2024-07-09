@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import AnimatedLetters from '../components/AnimatedLetters';
+import { fadeIn } from '../fadeIn';
 
 const themes = [
     {
@@ -88,6 +90,12 @@ const Home = () => {
   return (
     <div className={`relative w-full h-svh overflow-hidden transition-colors duration-1000 ${bg} ${text} ${border}`}>
       <div className="fixed z-50 w-full">
+      <motion.div
+            variants={fadeIn('down', 0.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
         <div className="flex justify-between p-8 w-full">
           <div className="flex flex-col text-md">
             <svg
@@ -125,13 +133,27 @@ const Home = () => {
             </button>
           </div>
         </div>
+        </motion.div>
       </div>
 
       <div className="grid grid-cols-10 items-center justify-center text-center w-full h-svh z-40">
         <div className="col-span-1 text-center">
+        <motion.div
+            variants={fadeIn('right', 0.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
           <h1 className="hidden md:block text-xs font-normal">MCMLXXXIV</h1>
+        </motion.div>
         </div>
         <div className="col-span-1 hidden md:flex justify-end">
+        <motion.div
+            variants={fadeIn('', 2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 106.18 131.06"
@@ -143,20 +165,56 @@ const Home = () => {
               d="M104.1,65.8c-27.47-1.44-49.57-28.7-50.99-62.78-1.42,34.14-23.6,61.43-51.14,62.78v.13c27.54,1.35,49.72,28.65,51.14,62.78,1.42-34.07,23.52-61.34,50.99-62.78v-.14Z"
             />
           </svg>
+          </motion.div>
         </div>
         <div className="col-span-10 md:col-span-6 text-center items-center justify-center text-[3.8rem] md:text-[5.5rem]  lg:text-9xl font-bold z-10 leading-[55px] md:leading-[90px]">
-          <h2 className="text-sm font-normal leading-10">(HI MY NAME IS ALICE BERGONHE)</h2>
-          <h1>FRONTEND</h1>
-          <h1>DEVELOPER</h1>
-          <h2 className="text-sm font-normal leading-10">(SUPER CREATIVE +++)</h2>
+
+          <motion.div
+            variants={fadeIn('down', 1.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
+             <h2 className="text-sm font-normal leading-10">(HI MY NAME IS ALICE BERGONHE)</h2>
+          </motion.div>
+
+          <h1 className='flex justify-center items-center uppercase'>
+            <AnimatedLetters
+            items={['f','r','o','n','t','e','n','d']}
+            delayPerItem={0.1} 
+            startDelay={0.5}
+            />
+          </h1>
+
+          <h1 className='flex justify-center items-center uppercase'>
+            <AnimatedLetters
+            items={['d','e','v','e','l','o','p','e','r']}
+            delayPerItem={0.1} 
+            startDelay={1.1}
+            />
+          </h1>
+
+          <motion.div
+            variants={fadeIn('up', 1.8)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
+            <h2 className="text-sm font-normal leading-10">(SUPER CREATIVE +++)</h2>
+            </motion.div>
 
           <div className="flex flex-col items-center justify-center text-center md:hidden text-xs font-normal">
-            <h1 className="">
+          <motion.div
+            variants={fadeIn('up', 2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
+            <h1 className="flex items-center justify-center">
               CURRENTLY FRONTEND ENGINEER APPRENTICE @QONTO
             </h1>
-            <a href=""></a>
             <a
-              className="hover:underline gap-1 flex items-center"
+              className="hover:underline gap-1 flex items-center justify-center"
               target="_blank"
               href="https://www.linkedin.com/in/alicebergonhe/ "
             >
@@ -165,9 +223,16 @@ const Home = () => {
                 <ion-icon name="arrow-forward-outline"></ion-icon>
               </span>
             </a>
+            </motion.div>
           </div>
         </div>
         <div className="col-span-1 hidden md:flex justify-start">
+        <motion.div
+            variants={fadeIn('', 2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 106.18 131.06"
@@ -179,15 +244,30 @@ const Home = () => {
               d="M104.1,65.8c-27.47-1.44-49.57-28.7-50.99-62.78-1.42,34.14-23.6,61.43-51.14,62.78v.13c27.54,1.35,49.72,28.65,51.14,62.78,1.42-34.07,23.52-61.34,50.99-62.78v-.14Z"
             />
           </svg>
+          </motion.div>
         </div>
         <div className="col-span-1 text-center">
+        <motion.div
+            variants={fadeIn('left', 0.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
           <h1 className="hidden md:block text-xs font-normal mr-4">CODE PASSIONATE &<br />DESIGN ENTHUSIAST</h1>
+        </motion.div>
         </div>
         <div className="absolute w-full flex bottom-[40px] justify-center text-center items-center">
+        <motion.div
+            variants={fadeIn('up', 0.5)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{ once: true, amount: 0}}
+            >
           <h1
             className={`transition-colors duration-1000 flex text-xs border-[1px] p-2 ${text} ${border}`}>
             NEW PORTFOLIO IS COMING VERY SOON
           </h1>
+        </motion.div>
         </div>
       </div>
 
