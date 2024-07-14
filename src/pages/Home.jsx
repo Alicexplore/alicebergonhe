@@ -107,7 +107,7 @@ const Home = () => {
   }
 
   return (
-    <div className={`relative w-full h-screen overflow-hidden transition-colors duration-1000 z-10 ${bg} ${text} ${border}`}>
+    <div className={`relative w-full h-svh overflow-hidden transition-colors duration-1000 z-10 ${bg} ${text} ${border}`}>
       <div className='z-0'>
         <motion.img
           src="./images/nuagelowqual.png"
@@ -204,7 +204,7 @@ const Home = () => {
         </motion.div>
       </div>
 
-      <div className="grid grid-cols-10 items-center justify-center text-center w-full h-screen z-50">
+      <div className="grid grid-cols-10 items-center justify-center text-center w-full h-svh z-50">
         <div className="col-span-1 text-center z-50">
           <motion.div
             variants={fadeIn('right', 0.5)}
