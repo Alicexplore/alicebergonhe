@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        suisse: ["Suisse Int'l Book", 'sans-serif'],
+        milano: ["MilanoRoman"],
+        bickham: ["bickham-script-pro-3", "sans-serif"],
       },
       fontSize: {
         '5xl': '3.3rem',
@@ -18,7 +19,7 @@ export default {
         '13xl': '15rem',
         '14xl': '17rem',
         '15xl': '20rem',
-        '16xl': '40rem',
+        '16xl': '30rem',
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
