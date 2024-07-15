@@ -61,6 +61,7 @@ const Home = () => {
   const [animating, setAnimating] = useState(false);
   const [transitionCount, setTransitionCount] = useState(0);
   const [themeLoaded, setThemeLoaded] = useState(false);
+  const [triggerAnimation, setTriggerAnimation] = useState(false);
 
   useEffect(() => {
     const storedThemeIndex = localStorage.getItem('themeIndex');
@@ -68,6 +69,7 @@ const Home = () => {
       setThemeIndex(parseInt(storedThemeIndex));
     }
     setThemeLoaded(true);
+    setTriggerAnimation(false);
   }, []);
 
   useEffect(() => {
@@ -79,6 +81,12 @@ const Home = () => {
       return () => clearTimeout(timer);
     }
   }, [animating, transitionCount]);
+
+    useEffect(() => {
+    if (themeLoaded) {
+      setTriggerAnimation(true);
+    }
+  }, [themeLoaded, themeIndex]);
 
   const handleThemeSwitch = () => {
     if (!animating) {
@@ -237,7 +245,9 @@ const Home = () => {
 
         <div className="col-span-10 md:col-span-6 text-center items-center justify-center text-[3.8rem] md:text-[5.5rem] lg:text-16xl font-bold z-50 leading-[55px] md:leading-[90px]">
           <div className={`p-6 sm:p-0 col-span-6 justify-center items-center flex max-w-none transition-colors ${text} duration-0`}>
-            <AnimatedSvg/>
+          <AnimatedSvg
+              triggerAnimation={triggerAnimation}
+            />
           </div>
         </div>
 
