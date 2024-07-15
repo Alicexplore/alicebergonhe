@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
       
-      const AnimatedSvg = ({ delayPerItem, startDelay, triggerAnimation }) => {
+      const AnimatedSvg = ({ triggerAnimation }) => {
         const Paths = [
             "M531.39,267.29v32.02h0c28.63,0,51.83-23.21,51.83-51.83v-31.33h-.69c-28.24,0-51.14,22.9-51.14,51.14Z",
             "M644.31,216.15c-28.24,0-51.14,22.9-51.14,51.14v32.02h0c28.63,0,51.83-23.21,51.83-51.83v-31.33h-.69Z",
@@ -13,10 +13,10 @@ import { motion } from 'framer-motion';
       
         const pathAnimation = {
           hidden: { y: '110%' },
-          visible: (custom) => ({
+          visible: () => ({
             y: '0%',
             transition: {
-              delay: startDelay + custom * delayPerItem,
+              delay: 1.5,
               duration: 0.3,
               type: 'spring',
               damping: 38,
