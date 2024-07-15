@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const AnimatedSvg = ({ paths, delayPerItem, startDelay }) => {
   const pathAnimation = {
-    hidden: { y: '100%' },
+    hidden: { y: '110%' },
     visible: {
       y: '0%',
       transition: {
