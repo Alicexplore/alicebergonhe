@@ -82,9 +82,12 @@ const Home = () => {
     }
   }, [animating, transitionCount]);
 
-    useEffect(() => {
+  useEffect(() => {
     if (themeLoaded) {
-      setTriggerAnimation(true);
+      const timer = setTimeout(() => {
+        setTriggerAnimation(true);
+      }, 500);
+      return () => clearTimeout(timer);
     }
   }, [themeLoaded, themeIndex]);
 
@@ -246,8 +249,10 @@ const Home = () => {
         <div className="col-span-10 md:col-span-6 text-center items-center justify-center text-[3.8rem] md:text-[5.5rem] lg:text-16xl font-bold z-50 leading-[55px] md:leading-[90px]">
           <div className={`p-6 sm:p-0 col-span-6 justify-center items-center flex max-w-none transition-colors ${text} duration-0`}>
           <AnimatedSvg
-              triggerAnimation={triggerAnimation}
-            />
+            triggerAnimation={triggerAnimation}
+            startDelay={1} 
+            delayPerItem={0.2} 
+          />
           </div>
         </div>
 
