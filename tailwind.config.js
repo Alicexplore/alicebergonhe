@@ -8,8 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        milano: ["MilanoRoman"],
-        bickham: ["bickham-script-pro-3", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       fontSize: {
         '5xl': '3.3rem',

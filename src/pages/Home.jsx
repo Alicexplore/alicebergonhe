@@ -109,7 +109,7 @@ const Home = () => {
   }
 
   return (
-    <div className={`relative w-full h-svh overflow-hidden transition-colors duration-1000 z-10 ${bg} ${text} ${border}`}>
+    <div className={`relative w-full h-svh overflow-hidden transition-colors duration-1000 z-10 font-inter ${bg} ${text} ${border}`}>
       <div className='z-0'>
         <motion.img
           src="./images/cloud-bottom.webp"
