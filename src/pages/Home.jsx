@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSvg from '../components/AnimatedSvg';
 import { fadeIn } from '../fadeIn';
+import LogoTooltip from '../components/LogoTooltip';
 
 const themes = [
 
@@ -159,31 +160,13 @@ const Home = () => {
           viewport={{ once: true, amount: 0}}
         >
           <div className="flex justify-between p-8 w-full">
-            <div className="flex flex-col text-md">
-              <a
-                className="hover:underline gap-1 flex items-center justify-center"
-                target="_blank"
-                href="https://www.linkedin.com/in/alicebergonhe/"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 992.13 992.13"
-                  fill="currentColor"
-                  className={`w-[70px] transition-colors duration-1000 ${text}`}
-                >
-                  <path
-                    d="M483.61,613.09L278.67,146.39h0l103.19-.03c153.49-2.85,293.4,87.58,353.84,228.7l204.97,467.04h0l-113.76-.02c-149.7-1.55-284.36-91.37-343.31-228.99Z"
-                  ></path>
-                  <circle cx="251.34" cy="648.65" r="193.9"></circle>
-                </svg>
-              </a>
-            </div>
+            <LogoTooltip />
             <div className="hidden md:flex md:flex-col items-center justify-center text-center ml-10">
               <h1 className="text-xs">
                 FRONTEND ENGINEER APPRENTICE @QONTO
               </h1>
               <a
-                className="text-xs hover:underline gap-1 flex items-center"
+                className="text-xs hover:underline hover:underline-offset-2 gap-1 flex items-center"
                 target="_blank"
                 href="https://www.linkedin.com/in/alicebergonhe/"
               >
