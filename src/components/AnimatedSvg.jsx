@@ -17,10 +17,10 @@ const AnimatedSvg = ({ startDelay = 0, delayPerItem = 0.5, triggerAnimation }) =
       y: '0%',
       transition: {
         delay: startDelay + index * delayPerItem,
-        duration: 0.3,
+        duration: 0.4,
         type: 'spring',
-        damping: 38,
-        stiffness: 70,
+        damping: 30,
+        stiffness: 80,
         ease: 'easeOut',
       },
     }),
