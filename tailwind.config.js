@@ -23,6 +23,12 @@ export default {
       animation: {
         'spin-slow': 'spin 4s linear infinite',
       },
+      rotate: {
+        '360': '360deg',
+      },
+      transitionDuration: {
+        '2000': '2000ms',
+      },
     },
   },
   plugins: [],

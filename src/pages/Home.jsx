@@ -160,7 +160,10 @@ const Home = () => {
           viewport={{ once: true, amount: 0}}
         >
           <div className="flex justify-between p-8 w-full">
-            <LogoTooltip />
+
+          <div className='flex flex-col'>
+            <LogoTooltip />     
+            </div>
             <div className="hidden md:flex md:flex-col items-center justify-center text-center ml-10">
               <h1 className="text-xs">
                 FRONTEND ENGINEER APPRENTICE @QONTO

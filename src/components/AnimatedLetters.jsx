@@ -3,18 +3,29 @@ import { motion } from 'framer-motion';
 
 const AnimatedLetters = ({ items, delayPerItem, startDelay }) => {
   const itemAnimation = {
-    hidden: { y: '100%' },
+    hidden: { y: '-110%' },
     visible: (i) => ({
       y: '0%',
       transition: {
         delay: startDelay + i * delayPerItem,
         duration: 0.3,
         type: 'spring',
-        damping: 18, 
-        stiffness: 100,
+        damping: 18,
+        stiffness: 90,
         ease: 'easeOut',
       },
     }),
+    exit: (i) => ({
+      y: '-110%', 
+      transition: {
+        delay: i * delayPerItem,
+        duration: 0.3,
+        type: 'spring',
+        damping: 18,
+        stiffness: 90,
+        ease: 'easeOut',
+      },
+    })
   };
 
   return (
@@ -25,9 +36,9 @@ const AnimatedLetters = ({ items, delayPerItem, startDelay }) => {
           custom={index}
           initial="hidden"
           animate="visible"
+          exit="exit"
           variants={itemAnimation}
           className="inline-block relative"
-          style={{ lineHeight: '1em' }}
         >
           {item}
         </motion.span>
