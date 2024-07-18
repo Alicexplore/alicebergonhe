@@ -129,7 +129,7 @@ const Home = () => {
             }
           }}
           viewport={{ once: false }}
-          className="absolute w-[300%] right-[-400px] bottom-[-88px] sm:right-[-120px] sm:bottom-[-50px] sm:w-[1100px] h-auto z-0 max-w-none"
+          className="absolute w-[290%] right-[-400px] bottom-[-88px] sm:right-[-120px] sm:bottom-[-50px] sm:w-[1100px] h-auto z-0 max-w-none"
         />
         <motion.img
           src="./images/cloud-top.webp"
@@ -149,7 +149,7 @@ const Home = () => {
             }
           }}
           viewport={{ once: false }}
-          className="absolute hidden sm:block sm:left-[-200px] sm:top-[-140px] sm:w-[1100px] h-auto z-0 max-w-none"
+          className="absolute w-[290%] left-[-400px] top-[-179px] sm:left-[-200px] sm:top-[-140px] sm:w-[1100px] h-auto z-0 max-w-none"
         />
       </div>
       <div className="fixed z-50 w-full">
